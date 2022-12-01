@@ -6,17 +6,6 @@ body {
     text-align: center;
   }
   
-  
-
-  li {
-    text-align: center;
-    display: inline;
-    margin: 16px 32px;
-    padding: 16px;
-    width: 240px;
-    height: 160px;
-   border-radius: 15px;
-  }
 
   #total {
     color: black;
