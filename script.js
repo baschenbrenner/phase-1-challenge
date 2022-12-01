@@ -36,7 +36,7 @@ function renderOneRecipient(recipient){
     button.addEventListener("click", () => {
       alert("Great Job! Who's Next?")
       card.remove()
-      // removeRecipient(recipient.id) cause i keep testing and deleting it lol
+      removeRecipient(recipient.id)
     })
     
   } 
