@@ -9,10 +9,8 @@ body {
   
 
   li {
-    color: black;
     text-align: center;
-    background-color: white;
-    display: inline-grid;
+    display: inline;
     margin: 16px 32px;
     padding: 16px;
     width: 240px;
