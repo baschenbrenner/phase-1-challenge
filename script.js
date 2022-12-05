@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("#recipient-form")
     form.addEventListener('submit', addRecipient)
 
-    const totalBudget = document.getElementById("total")
-    totalBudget.addEventListener('mouseover', function(){
-      totalBudget.innerText = "Here I am!"
-    })
-    totalBudget.addEventListener('mouseout', function(){
-    totalBudget.innerText = "Total Budget"
-    })
+    // const totalBudget = document.getElementById("total")
+    // totalBudget.addEventListener('mouseover', function(){
+    //   totalBudget.innerText = "Here I am!"
+    // })
+    // totalBudget.addEventListener('mouseout', function(){
+    // totalBudget.innerText = "Total Budget"
+    // })
 })
 
 function renderOneRecipient(recipient){
@@ -21,34 +21,39 @@ function renderOneRecipient(recipient){
     card.className = 'card'
     card.innerHTML = `
     <div id="content">
-    <h2>${recipient.name}</h2>
+    <h2 id="name">${recipient.name}</h2>
     <p>Gift idea: ${recipient.gift} </p>
     <p class ="budget">Budget of: $${recipient.budget}</p>
     </div>
     <div class="button">
-    <button class = "bought" id=${recipient.id}>Bought!</button>
+    <button class = "bought" id=${recipient.id}>Buy?</button>
     </div>
     `
     document.querySelector('#recipient-list').appendChild(card)
-  
-    
+
     const button = document.getElementById(`${recipient.id}`)
     button.addEventListener("click", () => {
       alert("Great Job! Who's Next?")
       card.remove()
-      removeRecipient(recipient.id)
+      // removeRecipient(recipient.id)
     })
     
+    button.addEventListener('mouseover', function(){
+      button.innerText = `Bought!`
+    })
+    button.addEventListener('mouseout', function(){
+      button.innerText = "Buy?"
+    })
   } 
   
-  function budgetSum(){
-    let sum = 0
-    const bud1 = parseInt(document.getElementsByClassName('budget')[0].innerText.slice(12))
-    const bud2 = parseInt(document.getElementsByClassName('budget')[2].innerText.slice(12))
-    const bud3 = parseInt(document.getElementsByClassName('budget')[3].innerText.slice(12))
-   console.log(parseInt(document.getElementsByClassName('budget')[0].slice(12)))
-  // for (let i=0; i <; i++)
-  } budgetSum()
+  // function budgetSum(){
+  //   let sum = 0
+  //   const bud1 = parseInt(document.getElementsByClassName('budget')[0].innerText.slice(12))
+  //   const bud2 = parseInt(document.getElementsByClassName('budget')[2].innerText.slice(12))
+  //   const bud3 = parseInt(document.getElementsByClassName('budget')[3].innerText.slice(12))
+  //  console.log(parseInt(document.getElementsByClassName('budget')[0].slice(12)))
+  // // for (let i=0; i <; i++)
+  // } budgetSum()
 
 // fetches // 
 
