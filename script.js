@@ -39,14 +39,13 @@ function renderOneRecipient(recipient){
     })
   } 
   
- function budgetSum(){
+  function budgetSum(){
     let sum = 0
-    const bud1 = parseInt(document.getElementsByClassName('budget')[0].innerText.slice(12))
-    const bud2 = parseInt(document.getElementsByClassName('budget')[2].innerText.slice(12))
-    const bud3 = parseInt(document.getElementsByClassName('budget')[3].innerText.slice(12))
-   console.log(parseInt(document.getElementsByClassName('budget')[0].slice(12)))
-  // for (let i=0; i <; i++)
-  } budgetSum()
+    const allBudgets = document.getElementsByClassName('budget')
+    for(let i=0; i < allBudgets.length; i++){
+    sum+= parseInt(allBudgets[i].innerText.slice(12))
+    }
+  }
 
 // fetches // 
 
