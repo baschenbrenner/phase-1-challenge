@@ -55,7 +55,7 @@ function renderOneRecipient(recipient){
     for(let i=0; i < allBudgets.length; i++){
     sum+= parseInt(allBudgets[i].innerText.slice(12))
     }
-    console.log(sum)
+    return sum
   }
 
 // fetches // 
