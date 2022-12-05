@@ -5,10 +5,9 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
   }
-  
 
   #total {
-    color: black;
+    color: #F4F0EF;
     text-align: left;
     background-color: red;
     width: 200px;
