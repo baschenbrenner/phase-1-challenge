@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener('submit', addRecipient)
 })
 
+
+
 function renderOneRecipient(recipient){
    
     let card = document.createElement('li')
@@ -15,7 +17,7 @@ function renderOneRecipient(recipient){
     <div id="content">
     <h2>${recipient.name}</h2>
     <p>Gift idea: ${recipient.gift} </p>
-    <p>Budget of: $${recipient.budget}</p>
+    <p class="budget">Budget of: $${recipient.budget}</p>
     </div>
     <div class="button">
     <button id=${recipient.id}>Buy?</button>
@@ -27,7 +29,7 @@ function renderOneRecipient(recipient){
     button.addEventListener("click", () => {
       alert("Great Job! Who's Next?")
       card.remove()
-      // removeRecipient(recipient.id)
+      removeRecipient(recipient.id)
     })
     button.addEventListener('mouseover', function(){
       button.innerText = `Bought!`
@@ -37,7 +39,14 @@ function renderOneRecipient(recipient){
     })
   } 
   
-
+ function budgetSum(){
+    let sum = 0
+    const bud1 = parseInt(document.getElementsByClassName('budget')[0].innerText.slice(12))
+    const bud2 = parseInt(document.getElementsByClassName('budget')[2].innerText.slice(12))
+    const bud3 = parseInt(document.getElementsByClassName('budget')[3].innerText.slice(12))
+   console.log(parseInt(document.getElementsByClassName('budget')[0].slice(12)))
+  // for (let i=0; i <; i++)
+  } budgetSum()
 
 // fetches // 
 
