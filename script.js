@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     totalBudget.addEventListener('mouseover', function(){
     totalBudget.innerText = budgetSum()
   })
+    totalBudget.addEventListener('mouseout', function(){
+    totalBudget.innerText = "Total Budget"
+  })
+
 
 })
 
