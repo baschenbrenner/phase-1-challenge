@@ -4,19 +4,19 @@
       "id": 1,
       "name": "Mom",
       "gift": "Purse",
-      "budget": 100
+      "budget": "100"
     },
     {
       "id": 2,
       "name": "Dad",
       "gift": "Mexico Jersey",
-      "budget": 100
+      "budget": "100"
     },
     {
       "id": 3,
       "name": "Brother",
       "gift": "New Video Game",
-      "budget": 65
+      "budget": "65"
     },
     {
       "name": "Sergio",
