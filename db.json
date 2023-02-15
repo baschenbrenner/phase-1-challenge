@@ -1,18 +1,6 @@
 {
   "recipients": [
     {
-      "id": 1,
-      "name": "Mom",
-      "gift": "Purse",
-      "budget": "100"
-    },
-    {
-      "id": 2,
-      "name": "Dad",
-      "gift": "Mexico Jersey",
-      "budget": "100"
-    },
-    {
       "id": 3,
       "name": "Brother",
       "gift": "New Video Game",
@@ -29,6 +17,12 @@
       "gift": "Headphones",
       "budget": "76",
       "id": 5
+    },
+    {
+      "name": "Mom",
+      "gift": "Book",
+      "budget": "30",
+      "id": 6
     }
   ]
 }

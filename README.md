@@ -14,8 +14,4 @@ It is being used for education purposes.
 
 ## Usage 
 
-*Add information to form presented on the application.
-
-*See complete list of gifts to buy.
-
-*Click 'buy?" button to clear gift from the list.
+* Challenge 1 - For the buttons that exist on each card, add an event listener that changes the text of the button 

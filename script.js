@@ -41,22 +41,9 @@ function renderOneRecipient(recipient){
       card.remove()
       removeRecipient(recipient.id)
     })
-    button.addEventListener('mouseover', function(){
-      button.innerText = `Bought!`
-    })
-    button.addEventListener('mouseout', function(){
-      button.innerText = "Buy?"
-    })
+    
   } 
   
-  function budgetSum(){
-    let sum = 0
-    const allBudgets = document.getElementsByClassName('budget')
-    for(let i=0; i < allBudgets.length; i++){
-    sum+= parseInt(allBudgets[i].innerText.slice(12))
-    }
-    return `$${sum}`
-  }
 
 // fetches // 
 
