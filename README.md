@@ -1,6 +1,8 @@
 # Christmas Shopping List
 
 Christmas shopping list is an application that makes keeping track of christmas present buying a little bit easier. 
+This repo was provided by Martha Ochoa, of October 2022 cohort.
+It is being used for education purposes.
 
 ## Installation 
 

@@ -30,12 +30,14 @@ body {
   color: #e04b52;
 }
 
-button:hover {
-  background-color: green;
-}
-
 ul {
   text-align: center;
   list-style-type: none;
 }
 
+.card {
+  background-color: green;
+  width: 200px;
+  margin: auto;
+  padding-bottom: 30px;
+}
