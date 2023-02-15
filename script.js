@@ -1,4 +1,6 @@
+
 document.addEventListener("DOMContentLoaded", () => {
+
     console.log("LOADED")
 
     getRecipients()
@@ -6,13 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("#recipient-form")
     form.addEventListener('submit', addRecipient)
 
-    const totalBudget = document.getElementById("total")
-    totalBudget.addEventListener('mouseover', function(){
-    totalBudget.innerText = budgetSum()
-  })
-    totalBudget.addEventListener('mouseout', function(){
-    totalBudget.innerText = "Total Budget"
-  })
+    
 
 
 })

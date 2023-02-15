@@ -21,7 +21,9 @@ body {
   width: 200px;
   border: 9px solid white;
   padding: 20px;
-  margin: 20px;
+  margin-left: 400px;
+  float: right;
+
 }
 
 .submit:hover {
@@ -33,6 +35,7 @@ body {
 ul {
   text-align: center;
   list-style-type: none;
+  width: 400px;
 }
 
 .card {
